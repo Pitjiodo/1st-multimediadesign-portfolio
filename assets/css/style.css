@@ -1,0 +1,599 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 2.6em;
+    color: #666;
+}
+
+/*-------Navigation-------*/
+
+#site-nav {
+    right: 0.5%;
+    position: fixed;
+    z-index: 1;
+}
+
+#site-nav a {
+    color: #fff;
+    display: block;
+    padding: 14px 16px 0 16px;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+#site-nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#site-nav li {
+    display: inline;
+    list-style: none;
+    float: left;
+    font-weight: 900;
+}
+
+#site-nav a:hover {
+    opacity: .5;
+}
+
+#site-nav .active {
+    font-size: 1.2em;
+    color: #F93300;
+}
+
+/*-------LOGO-------*/
+#logo {
+    position: absolute;
+    height: 35px;
+    width: auto;
+    top: 14px;
+    left: 0.5%;
+}
+/*----------------------HOME----------------------*/
+
+/*-------text-------*/
+
+.home-parallax-text, .home-section-2-textbox, .home-section-3-text, .home-section-x-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+}
+
+.home-parallax-text, .home-section-x-text {
+    top: 40%;
+}
+
+.home-section-2-textbox {
+    top: 20%;
+}
+
+/*-------Parallax 1-------*/
+
+.home-parallax {
+    background-attachment: fixed;
+    background-color: #2A2C34;
+    background-image: url('../pictures/peter-gellert-katow-multimediedesigner-web.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+}
+
+
+/*Scroll down button*/
+
+#scroll-down a span {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: opacity .3s;
+    -webkit-transform: rotate(-45deg);
+    -webkit-animation: homegodown 2s infinite;
+}
+
+.home-scroll-down a {
+    transition: opacity .3s;
+}
+.home-scroll-down a:hover {
+    opacity: .5;
+}
+
+@-webkit-keyframes homegodown {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/*-------Section 2-------*/
+
+.home-text {
+    margin: 0px 20% 0px 20%;
+    font-weight: 300;
+}
+.home-section-2 {
+    background-attachment: fixed;
+    background-color: #2A2C34;
+    /*border-top: solid 10px #fff;*/
+    min-height: 100%;
+    position: relative;
+}
+.home-section-2-textbox p {
+    margin-top: 50px;
+    text-transform: none;
+    line-height: 230%;
+    text-align: justify;
+}
+
+
+
+/*-------Section x-------*/
+
+.home-section-x {
+    background-attachment: fixed;
+    background-color: #2A2C34;
+    background-image: url('../pictures/land%20in%20the%20sky.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border-top: solid 10px #fff;*/
+    min-height: 50%;
+    opacity: 0.9;
+    position: relative;
+}
+
+/*-------Section 3-------*/
+.section-3 {
+    background-color: #2A2C34;
+}
+/*--visable list--*/
+
+#art, #animations, #school-projects, #other-projects {
+    margin: 50px 20% 0 20%;
+    position: relative;
+    display: flex;
+}
+.img-l {
+    position: relative;
+    height: 400px;
+    margin: 0 -200px;
+}
+.img-lx {
+    position: relative;
+    height: 500px;
+    margin: 0 -30px;
+}
+.img-lxx {
+    position: relative;
+    height: 500px;
+    margin: 0 -190px;
+}
+.img-lxxx {
+    position: relative;
+    height: 500px;
+    margin: -50px 0px 0 0;
+}
+.img-l1 {
+    max-height: 400px;
+    overflow: hidden;
+    flex: 1;
+}
+.img-l1:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*------overlay------*/
+#overlay11, #overlay12, #overlay13, #overlay21, #overlay22, #overlay23, #overlay31, #overlay32, #overlay33, #overlay41, #overlay42 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+.overlay {
+    background-color: #fff;
+    height: 500px;
+    margin: 12.5% 0 0 0;
+    min-width: 100%;
+    z-index: 3;
+}
+
+/*text*/
+.overlay-text {
+    background-color: aliceblue;
+    position: absolute;
+    height: 500px;
+    max-width: 50%;
+    overflow-y: scroll;
+    left: 0%;
+}
+.overlay p, .overlay h1 {
+    margin: 0 5% 0 5%;
+    line-height: 150%;
+    text-align: justify;
+    position: relative;
+}
+
+/*img*/
+.overlay-img {
+    max-width: 50%;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+}
+.overlay-img img, .overlay-img video {
+    max-height: auto;
+    max-width: 100%;
+    position: relative;
+}
+.img-text {
+    position: relative;
+    text-align: center;
+    margin: 0 0 30px 0;
+    top: 30px;
+}
+
+
+/*-------footer-------*/
+
+footer {
+    position: absolute;
+    width: 100%;
+}
+footer p {
+    background-color: #2A2C34;
+    color: #b2b2b2;
+    margin: 0;
+    font-size: 0.7em;
+    height: 2%;
+    min-width: 100%;
+    z-index: 5;
+}
+
+/*----------------------STYLE----------------------*/
+
+/*-------style top-------*/
+.style {
+    position: fixed;
+}
+.style-top {
+    height: 100px;
+    overflow: hidden;
+    background-color: #2A2C34;
+}
+
+.style-top img {
+    width: 100%;
+    z-index: 1;
+}
+
+/*-------style nav-------*/
+
+.style-nav {
+    right: 0.5%;
+    top: 50px;
+    position: fixed;
+    z-index: 0;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.style-nav a {
+    font-size: 1.6em;
+    color: #999;
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: opacity .3s;
+    text-align: center;
+}
+
+.style-nav li {
+    display: inline;
+    list-style: none;
+    float: left;
+    font-weight: 900;
+}
+
+.style-nav a:hover {
+    color: #eee;
+}
+
+.style-nav .active2 {
+    color: #F93300;
+}
+
+/*-------under part-------*/
+
+.bottom-part {
+    background-color: #E9E9E9;
+    min-height: 100%;
+    margin: 0;
+    z-index: 0;
+}
+
+.bottom-part-textbox h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 180px;
+    text-align: center;
+}
+
+.bottom-part-textbox p {
+    margin: 0 auto;
+    line-height: 230%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.style-text {
+    margin: 0px 20% 0px 20%;
+    padding-top: 20px;
+}
+
+/*cartoonish*/
+.style-cartoonish-img {
+    height: 200px;
+    width: auto;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+.left-style-cartoonish-img {
+    height: 400px;
+    width: auto;
+    left: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+/*simplisity*/
+.style-simplisity-img {
+    height: 200px;
+    width: auto;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+/*graphic*/
+.style-img, .style-graphic-img {
+    height: 200px;
+    width: auto;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+.left-style-graphic-img {
+    height: 200px;
+    width: auto;
+    left: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+/*----------------------ABOUT----------------------*/
+
+.about-top {
+    background-color: #2A2C34;
+    background-image: url('../pictures/art1_Tegnebr%C3%A6t%201.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 98%;
+    /*opacity: 0.9;*/
+    position: relative;
+}
+.about-bot {
+    background-color: #E9E9E9;
+    min-height: 105%;
+    position: relative;
+    max-width: 100%;
+}
+
+/*Diamond picture*/
+.diamond {
+    position: absolute;
+    width: 15%;
+    height: 0%;
+    transform: rotate(45deg);
+    overflow: hidden;
+    top: 30%;
+    left: 38%
+    
+}
+.diamond img {
+    transform: rotate(-45deg);
+    
+}
+
+/*text*/
+
+.peter {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    top: 5%;
+    left: 47%;
+}
+.gellert {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    top: 47%;
+    left: 16%;
+}
+.katow {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    top: 47%;
+    right: 16%;
+}
+.pitjiodo {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    bottom: 5%;
+    left: 47%;
+}
+
+/*bot text and picture*/
+.about-bot h1, .about-bot p {
+    margin: 0;
+}
+
+.about-bot h1 {
+    padding: 100px 0 0 100px;
+}
+
+.about-bot-text {
+    margin: 0px 800px 0px 100px;
+    font-weight: 300;
+}
+
+.about-bot p {
+    line-height: 230%;
+    text-align: justify;
+    padding: 10px 0 20px 0;
+}
+
+.about-bot-img, .about-bot-img-peter {
+    right: 10%;
+    top: 100px;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    overflow: hidden;
+    border: solid #2A2C34;
+}
+.about-bot-img-peter img {
+    height: 500px;
+    width: auto;
+    margin-left: -80px;
+}
+.about-bot-img img {
+    height: 500px;
+    width: auto;
+}
+
+.peter-gellert-katow #active1, .peter-gellert-katow #active2, .peter-gellert-katow #active3 {
+    color: #F93300;
+}
+/*----------------------Contact----------------------*/
+
+.contact {
+    position: fixed;
+    overflow: hidden;
+    height: 100px;
+    background-color: fuchsia;
+    z-index: 2;
+}
+.contact-top {
+    height: 100px;
+    overflow: hidden;
+    background-color: #2A2C34;
+}
+
+.contact-top img {
+    width: 100%;
+    z-index: 1;
+}
+
+.contact-bottom-part {
+    background-color: #E9E9E9;
+    min-height: 125%;
+    min-width: 100%;
+    position: relative;
+}
+
+.social-media {
+    position: absolute;
+    margin: 0 0 0 80px;
+    top: 200px;
+}
+.social-media h1 {
+    margin-left: -20px;
+}
+.social-media a, .phone a, .email a {
+    color: #666;
+}
+.email {
+    position: absolute;
+    margin: 0;
+    top: 200px;
+    right: 5%;
+}
+
+.phone {
+    position: absolute;
+    margin: 0 0 0 80px;
+    top: 550px;
+}
+.phone h1 {
+    margin-left: -20px;
+}
+
+.contact-form {
+    position: absolute;
+    background-color: #2A2C34;
+    margin: 0;
+    top: 420px;
+    right: 5%;
+    height: 300px;
+    width: 600px;
+}
+.contact-form1 {
+    position: absolute;
+    background-color: #2A2C34;
+    margin: 0;
+    top: 360px;
+    right: 5%;
+    height: 50px;
+    width: 600px;
+}
+.contact-form2 {
+    position: absolute;
+    background-color: #2A2C34;
+    margin: 0;
+    top: 300px;
+    right: 5%;
+    height: 50px;
+    width: 600px;
+}
+.contact-text {
+    position: absolute;
+    color: #b2b2b2;
+    margin: 0;
+    top: 380px;
+    right: 50px;
+    height: 50px;
+    width: 600px;
+    font-size: 3em;
+    transform: rotate(-45deg)
+}
